@@ -1,0 +1,20 @@
+
+.card{
+  width: 300px;
+  height: 150px;
+  background-image: url("https://novosti-saratova.ru/wp-content/uploads/2019/03/kinozal.jpg");
+  background-image: url("https://english-grammar.biz/wp-content/uploads/2016/08/private-cinema.jpg");
+  background-size: 100%;
+  background-size: cover;
+  background-position-y: center;
+  h2{
+    color: #f4f4f4;
+    text-shadow: 3px 0px 0px black;
+  }
+}
+button{
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: 0;
+
+}

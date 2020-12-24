@@ -1,0 +1,19 @@
+<div
+  *ngIf="posts$ | async as posts; else loading"
+  class="posts"
+>
+  <div class="form-control">
+    <input type="text" placeholder="Search..." [(ngModel)] = "searchStr">
+  </div>
+  <button class="btn btn-dark" (click)="toggle()">Sort by name</button>
+  <app-hotel-view
+    *ngFor="let post of posts| searchPosts:searchStr|sortPosts: sort"
+    [post] = "post"
+  >
+  </app-hotel-view>
+
+</div>
+
+<ng-template #loading>
+  <h2 class="text-center">Loading...</h2>
+</ng-template>

@@ -1,0 +1,22 @@
+h1{
+  text-align: center;
+}
+form{
+  max-width: 600px;
+  margin: 0 auto;
+  select{
+    max-width: 230px;
+    margin: 0 auto;
+    background: dodgerblue;
+    border-radius: 15px 15px 0 0;
+    border: 1px solid black;
+    option{
+      background: lightskyblue;
+    }
+
+  }
+}
+button{
+  max-width: 100px;
+  margin: 0 auto;
+}
